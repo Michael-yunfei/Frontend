@@ -1,0 +1,37 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+main {
+    background: linear-gradient(to right, #2CA02C, #1F77B4);
+    display: grid;
+    height: 100vh;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas: 
+    "box1 box1"
+    "box2 box3"
+    ;
+    
+}
+
+.box1 {
+    grid-area: box1;
+    background: #D72D2E;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.box2 {
+    grid-area: box2;
+    background: #9467BD;
+}
+
+.box3 {
+    grid-area: box3;
+    padding: 10px;
+    margin: 10;
+    background: #1B763F;
+}
